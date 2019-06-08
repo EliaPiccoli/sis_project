@@ -1,0 +1,21 @@
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#   * *         * *   * *      
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#         * *   * *         * *
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#
+# Autori E.P. & Marian Statache
+# A.A. 2017/2018
+# Registro a 3bit
+
+.model REGISTRO3
+.inputs A2 A1 A0
+.outputs O2 O1 O0
+.subckt REGISTRO A=A2 O=O2
+.subckt REGISTRO A=A1 O=O1
+.subckt REGISTRO A=A0 O=O0
+.search registro1bit.blif
+.end

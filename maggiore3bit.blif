@@ -1,0 +1,30 @@
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#   * *         * *   * *      
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#         * *   * *         * *
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#
+# Autori E.P. & Marian Statache
+# A.A. 2017/2018
+# Realizzazione del maggiore a 3 bit
+
+
+.model MAG3
+.inputs A2 A1 A0 B2 B1 B0
+.outputs O
+.subckt XOR A=A2 B=B2 O=X2
+
+.subckt XOR A=A1 B=B1 O=X1
+
+.subckt XOR A=A0 B=B0 O=X0
+
+.names A2 A1 A0 X2 X1 X0 O
+1--1-- 1
+-1-01- 1
+--1001 1
+
+.search xor.blif
+.end

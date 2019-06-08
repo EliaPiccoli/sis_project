@@ -1,0 +1,30 @@
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#   * *         * *   * *      
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#         * *   * *         * *
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#
+# Autori E.P. & Marian Statache
+# A.A. 2017/2018
+# Porta logica XNOR
+
+
+.model XNOR
+
+.inputs A B
+
+.outputs O
+
+
+.subckt XOR A=A B=B O=INT
+
+.subckt NOT A=INT O=O
+
+.search xor.blif
+
+.search not.blif
+
+.end

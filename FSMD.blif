@@ -1,0 +1,306 @@
+.model FSMD
+.inputs RES_GEN RES_WM RES_DW LOAD0 LOAD1 LOAD2 LOAD3 LOAD4 LOAD5 LOAD6 LOAD7 \
+LOAD8 LOAD9
+.outputs INT_GEN INT_WM INT_DW TH_1 TH_0
+.latch    v6.0 LatchOut_v4   1
+.latch    v6.1 LatchOut_v5   1
+.latch    INT_GEN R_INT_GEN re NIL 0
+.latch    INT_DW R_INT_DW re NIL 0
+.latch    INT_WM R_INT_WM re NIL 0
+.latch    MUX2_OV2 REG_OV2 re NIL 0
+.latch    MUX2_OV1 REG_OV1 re NIL 0
+.latch    MUX2_OV0 REG_OV0 re NIL 0
+.names OF [1183] INT_GEN
+11 1
+.names INT_GEN MUX_OV2 MUX2_OV0 [1175] INT_WM
+10-1 1
+1-01 1
+.names MUX_OV2 OF [1190] INT_DW
+011 1
+.names TH_0 v6.0 M300 [1172] TH_1
+-01- 1
+1--1 1
+.names FASCIA_0 LatchOut_v5 v6.0 [1172] TH_0
+1-0- 1
+-0-1 1
+.names LOAD1 M300 TOT_CON9 TOT_CON7 TOT_CON5 TOT_CON4 S3 V2 [768] [943] [1167] \
+[1169] [1185] FASCIA_0
+--1---------- 1
+-0-------1--- 1
+---11----0--- 1
+----1---1-1-- 1
+-----1--1-1-- 1
+--------101-- 1
+1-----1-10--- 1
+-------11-11- 1
+-------01-10- 1
+1--1--0--0--0 1
+.names RES_GEN LatchOut_v4 LatchOut_v5 [1183] v6.0
+01-- 1
+-010 1
+.names RES_GEN LatchOut_v4 [1172] v6.1
+--1 1
+01- 1
+.names TOT_CON9 TOT_CON7 TOT_CON5 TOT_CON4 [943] [1167] M300
+1----- 1
+-1--1- 1
+----11 1
+--111- 1
+.names REG_OV2 [1172] [1194] MUX_OV2
+111 1
+010 1
+.names REG_OV1 REG_OV0 [1172] MUX_OV1
+011 1
+101 1
+.names RES_GEN R_INT_GEN OF
+1- 1
+-1 1
+.names LOAD4 OF [1190] LD4BIS
+111 1
+.names LOAD5 OF [1175] LD5BIS
+111 1
+.names LD4BIS TOT_CON7 U7 [117] [892] [932] [1088] [1174] [1205] TOT_CON9
+----1--1- 1
+---1----1 1
+1----10-- 1
+-01-----1 1
+.names [768] [1200] TOT_CON7
+11 1
+00 1
+.names [138] T5 [140] [924] [1188] S6
+011-- 1
+0--11 1
+.names TOT_CON4 S4 [1170] [1185] [149]
+01-- 1
+--10 1
+.names [149] S4 S3 [1170] [1185] TOT_CON5
+0--1- 1
+0---0 1
+-111- 1
+.names S4 [1204] TOT_CON4
+11 1
+00 1
+.names [140] T3 V2 U4 [1169] [1189] S4
+0---0- 1
+0----1 1
+-111-- 1
+.names T3 [1202] S3
+11 1
+00 1
+.names MUX_OV2 MUX_OV1 MUX2_OV2
+10 1
+.names MUX_OV2 MUX_OV1 MUX2_OV1
+01 1
+.names REG_OV0 [1172] [1183] MUX2_OV0
+011 1
+.names T5 [140] [1188] [138]
+111 1
+.names U3 U4 U5 [129] [1186] T5
+--10- 1
+---00 1
+111-- 1
+.names S3 T3 [1169] [1189] [140]
+01-- 1
+--01 1
+.names U3 [1186] T3
+11 1
+00 1
+.names LOAD1 LOAD2 [1088] [1206] [81]
+--11 1
+010- 1
+.names LOAD1 OF X6 X7 [1088] [1177] [1180] X3
+----00- 1
+11-0--- 1
+--1-1-0 1
+.names LOAD0 OF [81] [1088] [1179] [1180] X6
+---01- 1
+--0--0 1
+01--0- 1
+.names LOAD3 OF [81] [1177] [89]
+1101 1
+.names LOAD2 LOAD3 [932] [1088] X7
+--11 1
+--00 1
+111- 1
+.names LOAD0 X3 [89] [100] [1127] [1206] W4
+01--1- 1
+-1-00- 1
+--00-1 1
+.names OF X6 [100] [932] [1177] [1179] [1180] W5
+--1---1 1
+--11-1- 1
+1-0--0- 1
+-1001-- 1
+.names LOAD0 LD4BIS [81] X3 [1180] [100]
+01-1- 1
+-10-0 1
+.names X7 [1196] W7
+11 1
+00 1
+.names OF LD5BIS [112] [1181] V2
+-10- 1
+1-01 1
+.names LD5BIS [1181] [112]
+11 1
+.names LD5BIS W4 [1197] V4
+01- 1
+-10 1
+101 1
+.names [121] [1182] [1198] U3
+--0 1
+01- 1
+.names V4 [1198] U4
+11 1
+00 1
+.names [1182] [1191] [121]
+10 1
+.names LD5BIS W5 V4 U4 [121] [119] [1178] [1192] U5
+----10-- 1
+--10-0-- 1
+-1---01- 1
+1----0-0 1
+.names W5 U4 [121] [1178] [119]
+-0-0 1
+1-11 1
+0-10 1
+.names LD5BIS W7 [119] [117] [856] [892] [925] U7
+1----0- 1
+--100-- 1
+-1-0-0- 1
+-1--1-1 1
+.names LD5BIS W7 [119] [856] [117]
+0110 1
+1010 1
+.names U3 U4 U5 [1186] [129]
+--10 1
+11-0 1
+.names [924] [1187] [768]
+11 1
+00 1
+.names LD5BIS [925] [1192] [856]
+00- 1
+-00 1
+111 1
+.names LD5BIS W7 [856] [925] [892]
+11-- 1
+--11 1
+.names [129] [1171] [924]
+0- 1
+-0 1
+.names LD4BIS X6 [89] [100] [1196] [925]
+----0 1
+01--- 1
+--01- 1
+.names LOAD3 [81] [89] [1088] [1206] [932]
+-1--- 1
+--1-- 1
+----1 1
+1--0- 1
+.names U7 [117] [768] [1205] [943]
+-1-- 1
+---1 1
+1-0- 1
+.names LOAD0 OF [1088]
+0- 1
+-0 1
+.names LD4BIS X3 [1127]
+01 1
+10 1
+.names S6 [149] [1167]
+1- 1
+-1 1
+.names LOAD8 OF [1169]
+0- 1
+-0 1
+.names T5 [140] [1170]
+01 1
+10 1
+.names [119] [856] [1171]
+11 1
+00 1
+.names FASCIA_0 M300 [1172]
+11 1
+.names LD4BIS X7 [932] [1088] [1174]
+11-- 1
+--10 1
+.names RES_WM R_INT_GEN R_INT_WM [1175]
+1-- 1
+-0- 1
+--1 1
+.names T3 U3 [1176]
+1- 1
+-0 1
+.names LOAD1 LOAD2 [1177]
+1- 1
+-1 1
+.names W4 V4 [1178]
+1- 1
+-0 1
+.names LOAD3 [89] [1179]
+0- 1
+-1 1
+.names LOAD2 OF [1180]
+0- 1
+-0 1
+.names LOAD1 LOAD3 [1181]
+01 1
+10 1
+.names [112] [1127] [1182]
+01 1
+10 1
+.names MUX_OV2 MUX_OV1 [1183]
+0- 1
+-0 1
+.names LOAD9 OF [1185]
+0- 1
+-0 1
+.names LOAD7 OF [1186]
+0- 1
+-0 1
+.names [138] U7 [1187]
+01 1
+10 1
+.names [129] [1171] [1188]
+1- 1
+-1 1
+.names U4 [1176] [1189]
+11 1
+00 1
+.names RES_DW R_INT_GEN R_INT_DW [1190]
+1-- 1
+-0- 1
+--1 1
+.names LOAD6 OF [1191]
+0- 1
+-0 1
+.names W4 W5 [1192]
+1- 1
+-1 1
+.names REG_OV1 REG_OV0 [1194]
+0- 1
+-0 1
+.names LD4BIS X6 [1196]
+0- 1
+-1 1
+.names [112] [1127] [1197]
+0- 1
+-0 1
+.names [121] [1191] [1198]
+1- 1
+-1 1
+.names S6 [149] [1200]
+0- 1
+-0 1
+.names V2 [1169] [1202]
+0- 1
+-1 1
+.names S3 [1185] [1204]
+0- 1
+-1 1
+.names LD4BIS X6 [892] [1174] [1205]
+--1- 1
+---1 1
+11-- 1
+.names LOAD1 [1180] [1206]
+10 1
+.end

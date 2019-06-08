@@ -1,0 +1,21 @@
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#   * *         * *   * *      
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#         * *   * *         * *
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#
+# Autori E.P. & Marian Statache
+# A.A. 2017/2018
+# Porta logica OR
+
+
+.model OR
+.inputs A B
+.outputs O
+.names A B O
+1- 1
+-1 1
+.end

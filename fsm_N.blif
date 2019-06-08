@@ -1,0 +1,58 @@
+.model FSM
+.inputs RES_GEN FASCIA_1 FASCIA_0 ALERT
+.outputs TH_1 TH_0
+.latch    v6.0 LatchOut_v4   1
+.latch    v6.1 LatchOut_v5   1
+.start_kiss
+.i 4
+.o 2
+.p 14
+.s 3
+.r INIT
+-00- FA FA 00
+-01- FA FA 01
+-10- FA FA 10
+-11- FA OV 11
+-00- OV FA 00
+-01- OV FA 01
+-10- OV FA 10
+-110 OV OV 11
+-111 OV INIT 00
+0--- INIT INIT 00
+100- INIT FA 00
+101- INIT FA 01
+110- INIT FA 10
+111- INIT OV 11
+.end_kiss
+.latch_order LatchOut_v4 LatchOut_v5
+.code FA 00
+.code OV 01
+.code INIT 11
+.names RES_GEN FASCIA_1 FASCIA_0 ALERT LatchOut_v4 LatchOut_v5 TH_1
+11--1- 1
+-10-0- 1
+-11--0 1
+-1100- 1
+.names RES_GEN FASCIA_1 FASCIA_0 ALERT LatchOut_v4 LatchOut_v5 TH_0
+1-1-1- 1
+-01-0- 1
+-11--0 1
+-1100- 1
+.names RES_GEN FASCIA_1 FASCIA_0 ALERT LatchOut_v4 LatchOut_v5 v6.0
+0---1- 1
+-11101 1
+.names RES_GEN FASCIA_1 FASCIA_0 LatchOut_v4 v6.1
+-11- 1
+0--1 1
+.exdc 
+.inputs RES_GEN FASCIA_1 FASCIA_0 ALERT LatchOut_v4 LatchOut_v5
+.outputs v6.0 v6.1 TH_1 TH_0
+.names LatchOut_v4 LatchOut_v5 v6.0
+10 1
+.names LatchOut_v4 LatchOut_v5 v6.1
+10 1
+.names LatchOut_v4 LatchOut_v5 TH_1
+10 1
+.names LatchOut_v4 LatchOut_v5 TH_0
+10 1
+.end

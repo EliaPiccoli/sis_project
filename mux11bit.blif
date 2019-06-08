@@ -1,0 +1,20 @@
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#   * *         * *   * *      
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#         * *   * *         * *
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#
+# Autori E.P. & Marian Statache
+# A.A. 2017/2018
+# Multiplexer con 1bit di scelta e 2 opzioni da 1bit ciascuna
+
+.model MUX
+.inputs S A B
+.outputs O
+.names S A B O
+11- 1
+0-1 1
+.end

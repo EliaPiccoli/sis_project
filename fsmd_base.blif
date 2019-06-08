@@ -1,0 +1,21 @@
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#   * *         * *   * *      
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#         * *   * *         * *
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#
+# Autori E.P. & Marian Statache
+# A.A. 2017/2018
+# FSMD del progetto che collega FSM e DATAPATH
+
+.model FSMD
+.inputs RES_GEN RES_WM RES_DW LOAD0 LOAD1 LOAD2 LOAD3 LOAD4 LOAD5 LOAD6 LOAD7 LOAD8 LOAD9
+.outputs INT_GEN INT_WM INT_DW TH_1 TH_0
+.subckt FSM RES_GEN=RES_GEN FASCIA_1=FASCIA_1 FASCIA_0=FASCIA_0 ALERT=ALERT TH_1=TH_1 TH_0=TH_0
+.subckt DATAPATH R_GEN=RES_GEN RES_WM=RES_WM RES_DW=RES_DW LOAD0=LOAD0 LOAD1=LOAD1 LOAD2=LOAD2 LOAD3=LOAD3 LOAD4=LOAD4 LOAD5=LOAD5 LOAD6=LOAD6 LOAD7=LOAD7 LOAD8=LOAD8 LOAD9=LOAD9 FASCIA_1=FASCIA_1 FASCIA_0=FASCIA_0 ALERT=ALERT INT_GEN=INT_GEN INT_DW=INT_DW INT_WM=INT_WM
+.search fsm_N.blif
+.search datapath.blif
+.end

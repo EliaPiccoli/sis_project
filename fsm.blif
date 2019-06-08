@@ -1,0 +1,56 @@
+﻿#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#   * *         * *   * *      
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#         * *   * *         * *
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#
+# Autori E.P. & Marian Statache
+# A.A. 2017/2018
+# FSM del progetto
+
+.model FSM
+.inputs RES_GEN FASCIA_1 FASCIA_0 ALERT
+.outputs TH_1 TH_0
+.start_kiss
+ .i 4
+ .o 2
+ .s 5
+ .p 22
+ .r INIT
+
+#INIT
+ 0--- INIT INIT 00
+ 100- INIT F_1 00
+ 101- INIT F_2 01
+ 110- INIT F_3 10
+ 111- INIT OV 11
+
+#F_1
+ -00- F_1 F_1 00
+ -01- F_1 F_2 01
+ -10- F_1 F_3 10
+ -11- F_1 OV 11
+
+#F_2
+ -00- F_2 F_1 00
+ -01- F_2 F_2 01
+ -10- F_2 F_3 10
+ -11- F_2 OV 11
+
+#F_3
+ -00- F_3 F_1 00
+ -01- F_3 F_2 01
+ -10- F_3 F_3 10
+ -11- F_3 OV 11
+
+#OV
+ -00- OV F_1 00
+ -01- OV F_2 01
+ -10- OV F_3 10
+ -110 OV OV 11
+ -111 OV INIT 00
+.end_kiss
+.end

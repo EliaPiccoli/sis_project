@@ -1,0 +1,58 @@
+map -m 0 -s
+fs
+map -s
+fs
+map -s
+fs
+map -s
+sr script.rugged
+map -s
+fs
+map -s
+fs
+map -s
+fs
+map -s
+fs
+map -s
+fs
+map -s
+sr script.rugged
+map -s
+fs
+map -s
+fs
+map -s
+fs
+map -s
+fs
+map -s
+fs
+map -s
+fs
+map -s
+sr script.rugged
+map -s
+fs
+map -s
+fs
+map -s
+sr script.rugged
+map -s
+sr script.rugged
+fs
+map -s
+fs
+map -s
+fs
+map -s
+fs
+map -s
+fs
+map -s
+fs
+map -s
+fs
+map -s
+print_map_stats
+psf

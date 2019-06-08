@@ -1,0 +1,21 @@
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#   * *         * *   * *      
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#         * *   * *         * *
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#
+# Autori E.P. & Marian Statache
+# A.A. 2017/2018
+# Multiplexer con 1bit di scelta e 2 opzioni da 3bit ciascuna
+
+.model MUX3
+.inputs S A2 A1 A0 B2 B1 B0
+.outputs O2 O1 O0
+.subckt MUX S=S A=A2 B=B2 O=O2
+.subckt MUX S=S A=A1 B=B1 O=O1
+.subckt MUX S=S A=A0 B=B0 O=O0
+.search mux11bit.blif
+.end

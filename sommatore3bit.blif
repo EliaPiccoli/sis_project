@@ -1,0 +1,23 @@
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#   * *         * *   * *      
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#         * *   * *         * *
+#   * * * * *   * *   * * * * *
+#   * * * * *   * *   * * * * *
+#
+# Autori E.P. & Marian Statache
+# A.A. 2017/2018
+# Sommatore a 3bit
+
+.model SUM3
+.inputs A2 A1 A0 B2 B1 B0
+.outputs O2 O1 O0
+.names 0
+.subckt SUM1 A=A0 B=B0 CIN=0 O=O0 COUT=C0
+.subckt SUM1 A=A1 B=B1 CIN=C0 O=O1 COUT=C1
+.subckt SUM1NR A=A2 B=B2 CIN=C1 O=O2
+.search sommatore1bit.blif
+.search sommatore1bit-rip.blif
+.end
